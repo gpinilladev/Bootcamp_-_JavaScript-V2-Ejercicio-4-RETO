@@ -17,6 +17,7 @@ const ingresarDatos = () => {
     } else {
         hNombre.innerHTML = "Nombre: " + nombre;
         let edad = prompt("Ingrese el edad: ");
+        edad = parseInt(edad);
         if (edad === '' || edad === null || edad === 'undefined') {
             alert("Error!\nLa edad debe ser valida y no debe ser vacia!");
             limpiarDatos();
