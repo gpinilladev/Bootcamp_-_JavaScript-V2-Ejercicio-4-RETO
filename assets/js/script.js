@@ -15,21 +15,18 @@ const ingresarDatos = () => {
         ingresarDatos();
     } else {
         hNombre.innerHTML = "Nombre: " + nombre;
-
         let edad = prompt("Ingrese el edad: ");
         if (edad === '' || edad === null || edad === 'undefined') {
             alert("Error!\nLa edad debe ser valida y no debe ser vacia!");
             ingresarDatos();
         } else {
             hEdad.innerHTML = "Edad: " + edad;
-
             let documento = prompt("Ingrese el documento: ");
             if (documento === '' || documento === null || documento === 'undefined') {
                 alert("Error!\nEl documento debe ser valido y no debe ser vacio!");
                 ingresarDatos();
             } else {
                 hDocumento.innerHTML = "Documento: " + documento;
-
                 let telefono = prompt("Ingrese el telefono: ");
                 if (telefono === '' || telefono === null || telefono === 'undefined') {
                     alert("Error!\nEl telefono debe ser valido y no debe ser vacio!");
